@@ -1,13 +1,13 @@
 def create_an_empty_array
-  Array.new
+  return []
 end
 
 def create_an_array
-  Array.new([1, 2, 3, 4])
+  return ["Meow", 100, :eight_ball, false]
 end
 
 def add_element_to_end_of_array(array, element)
-  array.push(element)
+  array << element
 end
 
 def add_element_to_start_of_array(array, element)
@@ -27,9 +27,9 @@ def retrieve_element_from_index(array, index_number)
 end
 
 def retrieve_first_element_from_array(array)
-  array.first
+  array[0]
 end
 
 def retrieve_last_element_from_array(array)
-  array.last
+  array[array.length - 1]
 end
